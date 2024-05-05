@@ -60,4 +60,5 @@ public class WebConfiguration {
         hibernateProperties.setProperty("hibernate.show_sql", "true");
         return hibernateProperties;
     }
+
 }
