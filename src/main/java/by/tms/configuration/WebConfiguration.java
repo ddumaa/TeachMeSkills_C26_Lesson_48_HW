@@ -58,7 +58,6 @@ public class WebConfiguration {
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
         hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
         hibernateProperties.setProperty("hibernate.show_sql", "true");
-        System.out.println(" ");
         return hibernateProperties;
     }
 }
