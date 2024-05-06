@@ -38,7 +38,7 @@ public class UserController {
     @Transactional
     public String profile(@PathVariable String username, Model model) {
         User byUsername = hibernateUserDao.findByUsername(username);
-        List<Operation> operations = hibernateUserDao.findAllBoxesByUsername(username);
+        List<Operation> operations = hibernateUserDao.findAllUserByUsername(username);
         byUsername.setOperations(operations);
         model.addAttribute("user", byUsername);
         return "user/profile";

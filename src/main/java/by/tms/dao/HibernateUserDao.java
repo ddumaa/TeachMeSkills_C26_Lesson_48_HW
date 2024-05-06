@@ -31,7 +31,7 @@ public class HibernateUserDao {
         return singleResult;
     }
 
-    public List<Operation> findAllBoxesByUsername(String username) {
+    public List<Operation> findAllUserByUsername(String username) {
         Session currentSession = sessionFactory.getCurrentSession();
         Query<User> query = currentSession.createQuery("from User where username = :u", User.class);
         query.setParameter("u", username);
